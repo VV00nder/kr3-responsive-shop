@@ -650,3 +650,165 @@ a:focus-visible {
   outline: 2px dashed var(--color-primary);
   outline-offset: 4px;
 }
+
+/* ==========================================================================
+   9. Компоненты: product (страница товара), specs-table
+   ========================================================================== */
+
+/* --- product: карточка товара на странице товара --- */
+
+.product {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-xl);
+
+  max-width: var(--container-width);
+  margin: 0 auto var(--space-xl);
+  padding: var(--space-lg);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface);
+}
+
+/* Левая колонка — картинка */
+.product__media {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product__image {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+}
+
+/* Бейдж «ХИТ» поверх картинки */
+.product__badge {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  z-index: 1;
+
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-primary-dark);
+}
+
+/* Правая колонка — информация */
+.product__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.product__title {
+  margin: 0;
+}
+
+.product__description {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.product__price {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.product__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: auto;   /* прижать кнопки к низу правой колонки */
+}
+
+/* --- product-specs: блок характеристик --- */
+
+.product-specs {
+  max-width: var(--container-width);
+  margin: 0 auto var(--space-xl);
+}
+
+.product-specs__title {
+  margin-top: 0;
+}
+
+/* --- specs-table: таблица характеристик --- */
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--color-surface);
+}
+
+.specs-table__row {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.specs-table__row:last-child {
+  border-bottom: none;
+}
+
+.specs-table__key,
+.specs-table__value {
+  padding: var(--space-sm) var(--space-md);
+  text-align: left;
+  vertical-align: top;
+}
+
+.specs-table__key {
+  width: 40%;
+  font-weight: 700;
+  background-color: var(--color-surface-accent);
+}
+
+.specs-table__value {
+  color: var(--color-muted);
+}
+
+/* --- Адаптив --- */
+
+@media (max-width: 700px) {
+  .product {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    padding: var(--space-md);
+  }
+
+  .product__image {
+    max-width: 100%;
+  }
+
+  .specs-table__key,
+  .specs-table__value {
+    display: block;
+    width: 100%;
+  }
+
+  .specs-table__key {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .specs-table__value {
+    padding-top: var(--space-xs);
+  }
+}
