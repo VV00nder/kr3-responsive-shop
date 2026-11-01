@@ -31,7 +31,6 @@ kr3-responsive-shop/
 └── .gitignore
 ```
 
-
 ## Дополнительные элементы
 
 - `sitemap.xml` — простая карта сайта;
@@ -125,8 +124,6 @@ kr3-responsive-shop/
 - `button` — кнопка;
 - `site-footer` — подвал сайта.
 
-
-
 # Контрольная работа №3
 
 Тема: «Адаптивная вёрстка и доступность многостраничного HTML/CSS-сайта».
@@ -163,4 +160,4 @@ kr3-responsive-shop/
 
 ## Ссылка на опубликованный проект
 
-GitHub Pages: [https://vv00nder.github.io/kr1-html-css-shop/](https://vv00nder.github.io/kr1-html-css-shop/)
+GitHub Pages: [vv00nder.github.io/kr3-responsive-shop](https://vv00nder.github.io/kr3-responsive-shop/)

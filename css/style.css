@@ -306,7 +306,6 @@ main {
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 98%;
   gap: var(--space-lg);
   align-items: stretch;
 
