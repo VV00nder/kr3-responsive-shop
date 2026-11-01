@@ -13,6 +13,7 @@
   <title>Каталог товаров — Учебный интернет-магазин</title>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <header class="site-header">
@@ -156,7 +157,20 @@
 
         <article class="product-card product-card--featured">
           <h3 class="product-card__title">Пухляш</h3>
-          <img src="./images/Airlander.jpg" alt="Пухляш" class="product-card__image">
+          <img
+              src="./images/Airlander.jpg"
+              srcset="./images/Airlander.jpg 480w,
+                      ./images/Airlander.jpg 640w,
+                      ./images/Airlander.jpg 960w"
+              sizes="(max-width: 639px) 100vw,
+                    (max-width: 1023px) 50vw,
+                    33vw"
+              alt="Пухляш"
+              width="640"
+              height="480"
+              loading="lazy"
+              class="product-card__image"
+            >
           <p class="product-card__description">Мягкий и очень небезопасный аэростат.</p>
           <p class="product-card__price">Цена: 168 л. метана</p>
           <a class="button button--primary product-card__button" type="button" data-product="Товар 6" href="./product.html">
