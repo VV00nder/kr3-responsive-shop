@@ -121,6 +121,10 @@ body {
 
 .catalog-layout {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "filters"
+    "products";
   gap: var(--space-lg, 24px);
 }
 
@@ -131,6 +135,7 @@ body {
 @media (min-width: 1024px) {
   .catalog-layout {
     grid-template-columns: 280px minmax(0, 1fr);
+    grid-template-areas: "filters products";
     align-items: start;
   }
 
@@ -192,7 +197,6 @@ body {
 
 .product-specs {
   width: 100%;
-  min-width: 640px;
   border-collapse: collapse;
 }
 
@@ -211,4 +215,39 @@ body {
 
 .order-dialog::backdrop {
   background: rgb(0 0 0 / 0.5);
+}
+
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 1000;
+  padding: 8px 12px;
+  color: #111111;
+  background-color: #ffffff;
+  border: 2px solid #111111;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 16px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary, #0057b8);
+  outline-offset: 3px;
+}
+
+.site-nav__link:focus-visible,
+.button:focus-visible,
+.order-form__input:focus-visible,
+.order-form__textarea:focus-visible,
+.order-form__select:focus-visible {
+  outline: 3px solid var(--color-primary, #0057b8);
+  outline-offset: 3px;
 }

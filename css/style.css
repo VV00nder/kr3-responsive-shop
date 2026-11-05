@@ -140,7 +140,7 @@ main {
 .site-nav__link {
   display: inline-block;
   padding: var(--space-sm) var(--space-md);
-  color: var(--color-primary);
+  color: var(--color-white);
   text-decoration: none;
   border-radius: var(--radius-sm);
 }
@@ -179,7 +179,7 @@ main {
 }
 
 .breadcrumbs__link {
-  color: var(--color-primary);
+  color: #003a8c;
 }
 
 .breadcrumbs__current::before {
@@ -394,7 +394,7 @@ main {
 
 /* Модификатор: СКИДКА */
 .product-card__badge--discount {
-  background-color: #5eff00c9;
+  background-color: #1f6b00;
 }
 
 /* Модификатор: НОВИНКА — зелёный/синий */

@@ -17,6 +17,8 @@
   <script src="js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">Kosmo-Bochki</a>
@@ -33,6 +35,9 @@
             <a class="site-nav__link" href="contacts.html">Контакты</a>
           </li>
           <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заявка</a>
+          </li>
+          <li class="site-nav__item">
             <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
           </li>
           <li class="site-nav__item">
@@ -45,7 +50,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main">
     <section class="hero">
       <h1 class="hero__title">Хотите в космос?
       </h1>
@@ -72,7 +77,7 @@
       <div class="products-grid">
         <article class="product-card product-card--featured">
           <h3 class="product-card__title">Space-Y</h3>
-          <img src=".\images\Space-Y.jpg" alt="Лучший среди худших" class="product-card__image">
+          <img src="./images/Space-Y.jpg" alt="Космический корабль Space-Y" class="product-card__image">
           <p class="product-card__description">Лучший среди худших - худший среди лучших</p>
           <p class="product-card__price">Цена: 1 957 294,34 руб.</p>
           <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
@@ -82,7 +87,7 @@
 
         <article class="product-card product-card--featured">
           <h3 class="product-card__title">Бочка Яги</h3>
-          <img src=".\images\bochka.jpg" alt="Бочка" class = "product-card__image">
+          <img src="./images/bochka.jpg" alt="Бочка" class = "product-card__image">
           <p class="product-card__description">Летательный аппарат суборбитальных полетов для истинных ценителей.</p>
           <p class="product-card__price">Цена: 1 234 284 мухомор.</p>
           <button class="button button--primary product-card__button" type="button" data-product="Товар 2">

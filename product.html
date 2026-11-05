@@ -12,6 +12,8 @@
   <script src="js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">Kosmo-Bochki</a>
@@ -28,6 +30,9 @@
             <a class="site-nav__link" href="contacts.html">Контакты</a>
           </li>
           <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заявка</a>
+          </li>
+          <li class="site-nav__item">
             <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
           </li>
           <li class="site-nav__item">
@@ -38,7 +43,7 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page" id="main">
     <!-- Хлебные крошки -->
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
@@ -50,7 +55,7 @@
       <div class="product__media">
         <span class="product__badge product__badge--hit">ХИТ</span>
         <img class="product__image"
-             src="images/space-y.jpg"
+             src="images/Space-Y.jpg"
              alt="Космический корабль Space-Y">
       </div>
 
@@ -81,6 +86,7 @@
       <h2 class="product-specs__title">Характеристики</h2>
       <div class="table-wrapper">
       <table class="specs-table">
+        <caption>Характеристики товара</caption>
         <tbody>
           <tr class="specs-table__row">
             <th class="specs-table__key" scope="row">Производитель</th>
@@ -127,5 +133,12 @@
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">&copy; 2026 Kosmo-Bochki. Все права защищены.</p>
+      <p class="site-footer__text">Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
 </body>
 </html>
